@@ -26,6 +26,10 @@ class MainActivity : AppCompatActivity() {
                             "document.getElementsByClassName('devsite-top-logo-row-wrapper-wrapper')[0].style.display = 'none';" +
                             "})()"
                 )
+                // YouTubeの位置までスクロール
+                view?.loadUrl(
+                    "javascript:document.getElementsByClassName('devsite-footer-promo')[1].scrollIntoView({behavior: 'smooth'});"
+                )
             }
         }
 
